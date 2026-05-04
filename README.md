@@ -102,47 +102,7 @@ FP-Growth identifies relationships between room type, neighbourhood, price tier,
 | Matplotlib / Seaborn | Visualisation |
 | Docker | Containerised environment |
 
----
 
-## How to Run
-
-### Prerequisites
-- Docker & Docker Compose
-- Access to a YARN cluster (or local Spark in standalone mode)
-- GCS bucket with the dataset (or swap to local CSV)
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/zulsinar031/Airbnb-Data-Analysis-Prediction-project-.git
-cd Airbnb-Data-Analysis-Prediction-project-
-```
-
-### 2. Run with Docker
-```bash
-docker-compose up
-```
-
-### 3. Or run locally with Spark
-```bash
-pip install pyspark matplotlib seaborn pandas numpy
-jupyter notebook airbnb_analysis.ipynb
-```
-
-> To use your own data, replace the GCS path with your local CSV path in the data loading section.
-
----
-
-## Project Structure
-
-```
-airbnb-market-analysis/
-├── airbnb_analysis.ipynb    ← Main analysis notebook (all 4 tasks)
-├── architecture_diagram.jpg ← System architecture diagram
-├── docker-compose.yml
-└── README.md
-```
-
----
 
 ## Key Findings
 
